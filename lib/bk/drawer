@@ -1,0 +1,61 @@
+drawer: Drawer(
+        child: SafeArea(
+          child: Container(
+            color: const Color(0xFFC2BBCD),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 15.0, left: 15.0),
+                  child: Text(
+                    'Weather',
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 10.0, left: 25.0),
+                  child: TextButton(
+                    onPressed: () async {
+                      navigator?.pop(context);
+                      var city = await Get.to(SearchScreen());
+                      if (city != null) {
+                        //var weatherUpdate = city;
+                        homeCtrl.weatherData.value = await city;
+                        print('Weather Data receive is $city ');
+                      } else {
+                        print('not Data receive');
+                      }
+                    },
+                    child: Text(
+                      'Search',
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF006092),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 25.0),
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Notification',
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF006092),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),

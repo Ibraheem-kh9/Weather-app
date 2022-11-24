@@ -1,0 +1,87 @@
+                      // IconButton(
+                      //   onPressed: () async {
+                      //     var city = await Get.to(SearchScreen());
+                      //     if (city != null) {
+                      //       //var weatherUpdate = city;
+                      //       homeCtrl.weatherData.value = await city;
+                      //       print('Weather Data receive is $city ');
+                      //     } else {
+                      //       print('not Data receive');
+                      //     }
+                      //   },
+                      //   icon: Icon(Icons.search),
+                      // ),
+
+
+                      ////////// weather city widget
+                                  // Align(
+                                  //   alignment: Alignment.topCenter,
+                                  //   child: Text(
+                                  //     header!.timezone!.split('/').removeAt(1).replaceAll('_', ' '),
+                                  //     style: const TextStyle(
+                                  //       fontSize: 40.0,
+                                  //       fontWeight: FontWeight.bold,
+                                  //       color: Colors.white,
+                                  //     ),
+                                  //   ),
+                                  // ),
+                                  // Positioned(
+                                  //     top: blockSize * 15,
+                                  //     //left: blockSize * 39,
+                                  //     child: Text(
+                                  //       controller.date,
+                                  //       //header!.timezone!.split('/').removeAt(0),
+                                  //       style: TextStyle(
+                                  //         fontSize: 25.0,
+                                  //         color: Colors.grey[300],
+                                  //       ),
+                                  //     )),
+
+
+
+                                  ///-------------------------------
+                                              //Positioned.fill(
+                                              //top: blockSize * 32,
+                                              //right: blockSize * 7,
+                                              //left: blockSize * 5,
+                                              //child:
+                                              // Row(
+                                              //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                              //   children: [
+                                              //     RichText(
+                                              //       text: TextSpan(
+                                              //         children: [
+                                              //           TextSpan(
+                                              //             text: '${weatherDataCurrent!.current!.windSpeed}',
+                                              //             style: const TextStyle(
+                                              //               fontWeight: FontWeight.bold,
+                                              //               fontSize: 35.0,
+                                              //               color: Colors.white,
+                                              //             ),
+                                              //           ),
+                                              //         ],
+                                              //       ),
+                                              //     ),
+                                              //
+                                              //     ///
+                                              //     Padding(
+                                              //       padding: EdgeInsets.only(
+                                              //           right: blockSizeHorizontal * 4,
+                                              //           left: blockSizeHorizontal * 4,
+                                              //           bottom: blockSizeHorizontal * 0.2),
+                                              //       child: Row(
+                                              //         children: [
+                                              //           Text(
+                                              //             '${weatherDataCurrent!.current!.subWeather![0].description}°',
+                                              //             style: const TextStyle(
+                                              //               fontWeight: FontWeight.bold,
+                                              //               fontSize: 35.0,
+                                              //               color: Colors.white,
+                                              //             ),
+                                              //           ),
+                                              //         ],
+                                              //       ),
+                                              //     )
+                                              //   ],
+                                              // ),
+                                              //)

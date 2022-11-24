@@ -1,0 +1,30 @@
+appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: (){},
+            icon: Icon(
+              Icons.settings,
+              size: fontSize * 4,
+            ),
+            color: Color(0xFFF4D096),
+          ),
+          IconButton(
+            onPressed: () async {
+              navigator?.pop(context);
+              var city = await Get.to(SearchScreen());
+              if (city != null) {
+                //var weatherUpdate = city;
+                homeCtrl.weatherData.value = await city;
+                print('Weather Data receive is $city ');
+              } else {
+                print('not Data receive');
+              }
+            },
+            icon: Icon(
+              Icons.search_rounded,
+              size: fontSize * 4,
+            ),
+            color: Color(0xFFF4D096),
+          ),
+        ],
+      ),
